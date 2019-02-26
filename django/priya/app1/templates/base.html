@@ -103,7 +103,7 @@ color:pink !important;
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             {% if user.is_authenticated %}
             <li class="pull-right" style="margin-right:10px;"><a class="Black-text" href="{% url 'logout' %}">Sign Out</a></li>
-            <li><p class="navbar-text black-text">Hi, {{ user.get_full_name }}</p></li>
+            <li><p class="navbar-text green-text">Hi, {{ user.first_name }}</p></li>
            {% endif %}
             <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="{% url 'courses' %}">courses</a></li>
