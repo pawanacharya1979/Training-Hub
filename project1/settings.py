@@ -91,19 +91,24 @@ WSGI_APPLICATION = 'project1.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
+#DATABASES = {
+    #'default': {
+        #'ENGINE': 'django.db.backends.db.sqlite3',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'NAME' :'pta_expansion',
+        #'USER':'root',
+        #'PASSWORD':'priyoop666',
+        #'HOST':'localhost',
+        #'PORT':'3036'
+
+ #   }
+#}
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'NAME' :'pta_expansion',
-        'USER':'root',
-        'PASSWORD':'priyoop666',
-        'HOST':'localhost',
-        'PORT':'3036'
-
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
