@@ -1,0 +1,6 @@
+codegen==1.0
+Django==1.11.18
+MySQL-python==1.2.5
+patterns==0.3
+pytz==2018.9
+
